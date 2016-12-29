@@ -11,15 +11,15 @@ project in a language like Lua, and develop the performant components in C?
 Structure
 ---------
 
- - pure_c.c is pure C that we will call from Lua. This C source file can be
+ - `pure_c.c` is pure C that we will call from Lua. This C source file can be
    compiled independently of Lua.
 
- - lua_glue.c is the glue between C and Lua.
+ - `lua_glue.c` is the glue between C and Lua.
 
- - build.sh compiles the glue as a shared object file that can be "required" by
-   Lua.
+ - `build.sh` compiles the glue as a shared object file that can be "required"
+   by Lua.
 
- - pure_lua.lua demonstrates the function written in C.
+ - `pure_lua.lua` demonstrates the function written in C.
 
 Requirements
 ------------
