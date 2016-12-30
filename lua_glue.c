@@ -35,6 +35,7 @@ int glue_norm(lua_State* L)
     /* Compute the norm, push it, and return. */
     returnValue = norm(components, count);
     lua_pushnumber(L, returnValue);
+    free(components);
     return 1;
 }
 

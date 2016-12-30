@@ -44,5 +44,7 @@ int main(int argc, char** argv)
 
     say_hello_from_c();
     printf("Norm of vector: %f\n", computedNorm);
+
+    free(components);
     return 0;
 }
